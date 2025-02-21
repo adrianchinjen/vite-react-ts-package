@@ -1,6 +1,6 @@
 {
   "name": "react-ts-team-kit",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A vite-react-typescript template with packages useful for a team to standardize their codebase.",
   "type": "module",
   "bin": {
