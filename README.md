@@ -27,4 +27,4 @@ npx react-ts-team-kit
 
 
 Github link:
-[react-ts-team-kit repo](https://github.com/adrianchinjen/vite-react-ts-package)
+[react-ts-team-kit repo](https://github.com/adrianchinjen/react-template)
