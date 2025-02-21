@@ -7,10 +7,8 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 import { fileURLToPath } from "url";
 
-// const TEMPLATE_REPO = "https://github.com/adrianchinjen/react-template.git";
 const TEMPLATE_REPO = "https://github.com/adrianchinjen/react-template.git";
 
-// Fix __dirname in ES Module
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -80,9 +78,6 @@ const isYarnInstalled = () => {
     };
 
     repoToClone();
-    //   reactVersion === "19" ? TEMPLATE_REPO_19 : TEMPLATE_REPO_18;
-    // execSync(`git clone ${repoToClone} "${appPath}"`, { stdio: "inherit" });
-    // execSync(`git clone ${TEMPLATE_REPO} "${appPath}"`, { stdio: "inherit" });
 
     // Navigate into the project directory
     process.chdir(appPath);
@@ -111,7 +106,9 @@ const isYarnInstalled = () => {
       stdio: "inherit",
     });
 
-    console.log(chalk.green("\n✅ Setup complete! Here are the next steps:\n"));
+    console.log(
+      chalk.green("\n✅ Setup complete! WelcomeHere are the next steps:\n")
+    );
     console.log(chalk.cyan(`   cd ${projectName}`));
     console.log(
       chalk.cyan(`   ${packageManager === "yarn" ? "yarn dev" : "npm run dev"}`)
