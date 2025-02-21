@@ -1,0 +1,21 @@
+{
+  "name": "test1-react-ts-squad",
+  "version": "1.0.8",
+  "description": "A vite-react-typescript template with packages useful for a team to standardize their codebase.",
+  "type": "module",
+  "bin": {
+    "test1-react-ts-squad": "index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "fs-extra": "^11.0.0",
+    "inquirer": "^9.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
