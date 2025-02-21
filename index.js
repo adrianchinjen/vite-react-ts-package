@@ -30,7 +30,7 @@ const isYarnInstalled = () => {
     chalk.green.bold("\n🚀 Initializing Vite React TypeScript Template...\n")
   );
 
-  const { projectName, packageManager } = await inquirer.prompt([
+  const { projectName, reactVersion, packageManager } = await inquirer.prompt([
     {
       name: "projectName",
       type: "input",
