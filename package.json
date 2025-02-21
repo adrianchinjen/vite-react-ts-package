@@ -1,10 +1,10 @@
 {
-  "name": "test1-react-ts-squad",
+  "name": "react-ts-team-kit",
   "version": "1.0.12",
   "description": "A vite-react-typescript template with packages useful for a team to standardize their codebase.",
   "type": "module",
   "bin": {
-    "test1-react-ts-squad": "index.js"
+    "react-ts-team-kit": "index.js"
   },
   "dependencies": {
     "chalk": "^5.0.0",
