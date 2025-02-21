@@ -21,5 +21,10 @@ A **lightweight, fast, and modern** Vite-based React TypeScript template with su
 
 You can create a new project using this template by running:
 
-```sh
+```shell
 npx react-ts-team-kit
+```
+
+
+Github link:
+[react-ts-team-kit repo](https://github.com/adrianchinjen/vite-react-ts-package)
