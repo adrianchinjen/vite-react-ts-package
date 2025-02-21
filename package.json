@@ -15,7 +15,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "frontend",
+    "vite",
+    "react",
+    "typescript",
+    "template",
+    "boilerplate",
+    "starter",
+    "react-ts",
+    "vite-react",
+    "web-development"
+  ],
+  "author": "Adrian Chinjen",
   "license": "ISC"
 }
