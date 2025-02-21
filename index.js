@@ -8,9 +8,7 @@ import chalk from "chalk";
 import { fileURLToPath } from "url";
 
 // const TEMPLATE_REPO = "https://github.com/adrianchinjen/react-template.git";
-const TEMPLATE_REPO_18 = "https://github.com/adrianchinjen/react-template.git";
-const TEMPLATE_REPO_19 =
-  "https://github.com/adrianchinjen/react-template.git#react-19";
+const TEMPLATE_REPO = "https://github.com/adrianchinjen/react-template.git";
 
 // Fix __dirname in ES Module
 const __filename = fileURLToPath(import.meta.url);
@@ -68,9 +66,22 @@ const isYarnInstalled = () => {
     );
 
     // Clone the template repo
-    const repoToClone =
-      reactVersion === "19" ? TEMPLATE_REPO_19 : TEMPLATE_REPO_18;
-    execSync(`git clone ${repoToClone} "${appPath}"`, { stdio: "inherit" });
+    const repoToClone = () => {
+      if (reactVersion === "19") {
+        execSync(
+          `git clone --branch react-19 --single-branch ${TEMPLATE_REPO} "${appPath}"`,
+          { stdio: "inherit" }
+        );
+      } else {
+        execSync(`git clone ${TEMPLATE_REPO} "${appPath}"`, {
+          stdio: "inherit",
+        });
+      }
+    };
+
+    repoToClone();
+    //   reactVersion === "19" ? TEMPLATE_REPO_19 : TEMPLATE_REPO_18;
+    // execSync(`git clone ${repoToClone} "${appPath}"`, { stdio: "inherit" });
     // execSync(`git clone ${TEMPLATE_REPO} "${appPath}"`, { stdio: "inherit" });
 
     // Navigate into the project directory
