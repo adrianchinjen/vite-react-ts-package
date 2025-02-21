@@ -96,7 +96,7 @@ const isYarnInstalled = () => {
     // Create an initial commit
     console.log(chalk.yellow("\n📌 Creating initial commit...\n"));
     execSync("git add .", { stdio: "inherit" });
-    execSync('git commit -m "Initial commit from template"', {
+    execSync('git commit -m "test: initial commit from template"', {
       stdio: "inherit",
     });
 
