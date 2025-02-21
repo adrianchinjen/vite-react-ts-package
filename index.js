@@ -106,9 +106,7 @@ const isYarnInstalled = () => {
       stdio: "inherit",
     });
 
-    console.log(
-      chalk.green("\n✅ Setup complete! WelcomeHere are the next steps:\n")
-    );
+    console.log(chalk.green("\n✅ Setup complete! Here are the next steps:\n"));
     console.log(chalk.cyan(`   cd ${projectName}`));
     console.log(
       chalk.cyan(`   ${packageManager === "yarn" ? "yarn dev" : "npm run dev"}`)
