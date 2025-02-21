@@ -1,6 +1,6 @@
 {
   "name": "test1-react-ts-squad",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A vite-react-typescript template with packages useful for a team to standardize their codebase.",
   "type": "module",
   "bin": {
